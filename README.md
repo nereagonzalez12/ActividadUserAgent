@@ -1,1 +1,1 @@
-# django-base
+# DAW DJANGO SHOWCASES
