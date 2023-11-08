@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load user_agents %}
+
+{% block content %}
+
+    {% if movil %}
+        <p>Estás en un móvil</p>
+    {% endif %}
+
+    {% if tablet %}
+        <p>Estás en una tablet</p>
+    {% endif %}
+
+    {% if pc %}
+        <p>Estás en un PC</p>
+    {% endif %}
+
+    {% if bot %}
+        <p>Eres un bot</p>
+    {% endif %}
+
+    {% if tactil %}
+        <p>La pantalla es tactil</p>
+    {% endif %}
+
+    <p>IP: {{ ip_cliente }}</p>
+
+
+{% endblock %}
+

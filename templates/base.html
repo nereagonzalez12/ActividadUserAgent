@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Agent</title>
+    <link href="{% static 'node_modules\bootstrap\dist\css\bootstrap-utilities.rtl.css' %}" rel="stylesheet"/>
+</head>
+<body>
+
+    <p>Información de User Agent: <a href="http://127.0.0.1:8000/user-agent/info">Información</a>
+    </p>
+    <br>
+    <p>Información de Dispositivo usado: <a href="http://127.0.0.1:8000/user-agent/dispositivos">Dispositivos</a>
+    </p>
+    {% block content %}
+    {% endblock %}
+
+</body>
+</html>

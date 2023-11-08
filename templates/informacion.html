@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+   {% block content %}
+
+    <p>Navegador: {{ navegador }}</p>
+    <p>Familia: {{ familia_navegador }}</p>
+    <p>Sistema Operativo: {{ so }}</p>
+    <p>Familia del Sistema Operativo: {{ familia_so }}</p>
+    <p>Version del Sistema Operativo: {{ version_so }}</p>
+
+   {% endblock %}
